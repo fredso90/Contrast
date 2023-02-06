@@ -1,0 +1,42 @@
+﻿<Window x:Class="Contrast.ImageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Contrast"
+        mc:Ignorable="d"
+        Title="ImageWindow" Height="400" Width="680" ResizeMode="NoResize">
+
+    <StackPanel Orientation="Vertical">
+        <TextBlock FontFamily="Consolas" FontWeight="Bold" FontSize="55" Margin="80,0,0,0"><Span Name="con">Con</Span><Span Name="tra">tra</Span><Span Name="st">st.</Span><Span FontFamily="Arial" Foreground="Gray" FontSize="11">by @fredso90</Span></TextBlock>
+        <StackPanel Orientation="Horizontal" Margin="20">
+            <Label Name="color1image" Width="100" Height="250"></Label>
+            <Label Name="color2image" Width="100" Height="250"></Label>
+            <Label Name="color3image" Width="100" Height="250"></Label>
+            <StackPanel Orientation="Vertical" Margin="0,45,10,0">
+                <Ellipse Name="ellipse1" Fill="Beige" Width="100" Height="100"></Ellipse>
+                <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                    <Ellipse Name="ellipse2" Fill="Beige" Width="100" Height="100" Margin="0,0,20,0"></Ellipse>
+                    <Ellipse Name="ellipse3" Fill="Beige" Width="100" Height="100"></Ellipse>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Name="c1_rect" Width="10" Height="10" Margin="0,130,0,0" Fill="AliceBlue"></Rectangle>
+                    <Label Name="c1_txt" Margin="0,130,0,0">Kewk</Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Name="c2_rect" Width="10" Height="10" Fill="AliceBlue"></Rectangle>
+                    <Label Name="c2_txt">Text</Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Name="c3_rect" Width="10" Height="10" Fill="AliceBlue"></Rectangle>
+                    <Label Name="c3_txt">Text</Label>
+                </StackPanel>
+                <Button x:Name="saveImgBtn" Click="saveImgBtn_Click" Visibility="Visible">Save Image</Button>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+    
+
+</Window>
